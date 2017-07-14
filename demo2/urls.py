@@ -9,8 +9,19 @@ from wagtail.wagtailcore import urls as wagtail_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
 
 from search import views as search_views
+from demo2 import views
+
+from django.views.generic.base import TemplateView
+
 
 urlpatterns = [
+    #static
+    url(r'about/', views.about),
+    url(r'contact/', views.contact),
+    url(r'blog/', views.blog),
+
+
+    #other
     url(r'^django-admin/', include(admin.site.urls)),
 
     url(r'^admin/', include(wagtailadmin_urls)),
@@ -26,6 +37,7 @@ urlpatterns = [
     # Alternatively, if you want Wagtail pages to be served from a subpath
     # of your site, rather than the site root:
     #    url(r'^pages/', include(wagtail_urls)),
+
 ]
 
 

@@ -6,6 +6,8 @@ from django.shortcuts import render
 from wagtail.wagtailcore.models import Page
 from wagtail.wagtailsearch.models import Query
 
+from django.shortcuts import render
+from django.views.generic import TemplateView
 
 def search(request):
     search_query = request.GET.get('query', None)

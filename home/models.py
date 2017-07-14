@@ -1,7 +1,5 @@
 from __future__ import unicode_literals
-
 from django.db import models
-
 from wagtail.wagtailcore.models import Page
 from wagtail.wagtailcore.fields import RichTextField
 from wagtail.wagtailadmin.edit_handlers import FieldPanel
@@ -16,11 +14,11 @@ class HomePage(Page):
 
 class Product(Page):
     productAt = models.URLField()
-    sku = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
+    sku = models.CharField(max_length=255)
     image = models.CharField(max_length=255)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    description = models.CharField(max_length=255)
+    description = models.TextField()
 
     content_panels = Page.content_panels + [
         FieldPanel('sku'),
