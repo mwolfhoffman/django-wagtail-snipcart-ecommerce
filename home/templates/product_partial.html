@@ -8,7 +8,7 @@
 
         <div class="product-description">
           <p>{{ product.name }}</p>
-          <!-- <p>{{ product.description }}</p> -->
+           <p>{{ product.description }}</p> 
 
             <button class="snipcart-add-item"
             data-item-name="{{ product.name }}"
@@ -17,7 +17,7 @@
             data-item-url="{{ product.productAt }}"
             data-item-price="{{ product.price }}"
             data-item-description="{{ product.description }}">
-            Buy it for {{ product.price }} $
+            Add to cart ${{ product.price }}
           </button>
         </div>
       </a>
