@@ -28,6 +28,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 INSTALLED_APPS = [
     'home',
     'search',
+    'corsheaders',
 
     'wagtail.wagtailforms',
     'wagtail.wagtailredirects',
@@ -54,6 +55,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -89,6 +92,24 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'demo2.wsgi.application'
+
+
+# CORS
+CORS_ORIGIN_WHITELIST = (
+    'localhost:8000',
+)
+
+CORS_ALLOW_HEADERS = (
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+)
 
 
 # Database
