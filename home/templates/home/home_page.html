@@ -8,18 +8,23 @@
 
   {% include "snipcart.html" %}
 
-  <div class="site-title">{{ self.title }}</div>
+    <header class="text-center">
+        <h1>Artsy Angler</h1>
+        <h4>Incredible Artwork you should buy</h4>
+    </header>
 
-  <div class="products">
-    <div class="container">
-      <div class="row">
-            {% for product in self.get_children.specific %}
-        <div class="col-md-3">
+    <div class="products">
+      <div class="container">
+        <div class="row is-flex">
+              {% for product in self.get_children.specific %}
+          <div class="col-md-3">
+            <div class="box">
                 {% include "product_partial.html" %}
+            </div>
           </div>
-              {% endfor %} 
+                {% endfor %} 
+          </div>
         </div>
       </div>
-    </div>
 
 {% endblock %}

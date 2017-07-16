@@ -2,6 +2,11 @@
     max-width: 200px;
 }
 
-.product-description{
-    height: 300px;
+.row.is-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
 }
