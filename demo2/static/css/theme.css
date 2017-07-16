@@ -5,7 +5,9 @@ body {
 	font-family:Open Sans,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	color:#fff;
 	background-color:#000;
-	 font-weight:300;
+	font-weight:300;
+	padding-top: 65px; 
+
 }
 html {
 	width:100%;
@@ -43,12 +45,22 @@ a:hover,a:focus {
 .light {
 	font-weight:400;
 }
-.navbar-custom {
+
+
+
+
+
+
+
+/*Navbar  */
+/* .navbar-custom {
 	margin-bottom:0;
 	border-bottom:1px solid rgba(255,255,255,.3);
 	text-transform:uppercase;
 	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	background-color:#000;
+	background-color: blue;
+	z-index: 500;
 }
 .navbar-custom .navbar-brand {
 	font-size:20px;
@@ -68,7 +80,7 @@ a:hover,a:focus {
 }
 .navbar-custom a {
 }
-.navbar-custom .nav li a {
+ .navbar-custom .nav li a {
 	-webkit-transition:background .3s ease-in-out;
 	-moz-transition:background .3s ease-in-out;
 	transition:background .3s ease-in-out;
@@ -93,6 +105,8 @@ a:hover,a:focus {
 .navbar-custom .nav li.active a:hover {
 	color:#1ba39c;
 }
+
+
 @media(min-width:768px) {
 	.navbar-custom {
 		padding:20px 0;
@@ -113,7 +127,11 @@ a:hover,a:focus {
 		color:#333;
 		display:inline-block;
 	}
-}
+} */
+/*End Nav  */
+
+
+/*Intro... Picture backgrouns  */
 .intro {
 	display:table;
 	width:100%;
@@ -426,6 +444,11 @@ section {
 	-o-transition:border linear 0.2s,box-shadow linear 0.2s;
 	transition:border linear 0.2s,box-shadow linear 0.2s;	
 }
+
+
+
+
+/*Contact Form  */
 #contactform input,#contactform textarea {
 	border:0px;
 	border-bottom:2px solid #333;
