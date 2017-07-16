@@ -10,12 +10,16 @@
 
   <div class="site-title">{{ self.title }}</div>
 
-    <div class="products">
-
-      {% for product in self.get_children.specific %}
-        {% include "product_partial.html" %}
-      {% endfor %}
-
+  <div class="products">
+    <div class="container">
+      <div class="row">
+            {% for product in self.get_children.specific %}
+        <div class="col-md-3">
+                {% include "product_partial.html" %}
+          </div>
+              {% endfor %} 
+        </div>
+      </div>
     </div>
 
 {% endblock %}
