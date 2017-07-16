@@ -1,83 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Contact - Artsy Angler</title>
-<!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../static/css/theme.css">
-<script src="https://use.fontawesome.com/07d6cb1858.js"></script>
+	<title>Contact - Artsy Angler</title>
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../static/css/theme.css">
+	<script src="https://use.fontawesome.com/07d6cb1858.js"></script>
 
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- Navigation -->
-        {% include "navigation-partial.html" %}
+	<!-- Navigation -->
+	{% include "navigation-partial.html" %}
 
 
-<!-- Intro Header -->
-<header class="intro">
-<div class="intro-body">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<h1 class="brand-heading">Get in Touch</h1>
-				<p class="intro-text">
-					<!-- The contact form is Workin'! -->
-				</p>
-				<a href="#contact" class="btn btn-circle page-scroll">
-				<i class="fa fa-angle-double-down animated"></i>
-				</a>
+	<header>
+		<center>
+			<h1>Get In Touch</h1>
+		</center>
+	</header>
+
+	<!-- Contact Section -->
+	<section id="contact">
+		<div class="container">
+			<div class="row contact-form-row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!--<p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>-->
+                <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+                <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+                <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+                <center>
+
+                    <form method="POST" action="http://formspree.io/nordinberghuisj@gmail.com">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <br>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <br>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <br>
+                        <button type="submit">Send</button>
+                    </form>
+                </center>
+            </div>
+        </div>
+    </div>
 			</div>
-		</div>
-	</div>
-</div>
-</header>
-<!-- Contact Section -->
-<section id="contact">
-<div class="container content-section">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2">
-			<div class="done">
-				<div class="alert alert-success">
-					<button type="button" class="close" data-dismiss="alert">×</button>
-					Your message has been sent. Thank you!
-				</div>
-			</div>
-			<form method="post" action="contact.php" id="contactform">
-				<div class="form">
-					<input type="text" name="name" placeholder="Your Name *">
-					<input type="text" name="email" placeholder="Your E-mail Address *">
-					<textarea name="comment" rows="7" placeholder="Type your Message *"></textarea>
-					<input type="submit" id="submit" class="clearfix btn" value="Send">
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
-</section>
-<!-- Footer -->
-{% include "footer-partial.html" %}
 
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<!-- Contact JavaScript -->
-<script src="js/validate.js"></script>
-<!-- Custom Theme JavaScript -->
-<script src="js/theme.js"></script>
+		</div>
+	</section>
+
+	<style>
+		input{
+			height: 40px;
+			width: 174px;
+			/* border: 5px groove grey; */
+		}
+		textarea{
+			height: 80px;
+			width:174px;
+
+			/* border: 5px groove grey; */
+		}
+	</style>
+
+	<!-- Footer -->
+	{% include "footer-partial.html" %}
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Plugin JavaScript -->
+	<script src="js/jquery.easing.min.js"></script>
+	<!-- Contact JavaScript -->
+	<script src="js/validate.js"></script>
+	<!-- Custom Theme JavaScript -->
+	<script src="js/theme.js"></script>
 </body>
+
 </html>
