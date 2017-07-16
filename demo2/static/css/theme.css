@@ -1,5 +1,9 @@
-body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  height: 100%;
+
 }
 
 .portfolio-item {
@@ -7,12 +11,14 @@ body {
 }
 
 footer {
-	 margin: 50px 0; 
-	  /* position: fixed; */
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
+  position:fixed;
+   left:0px;
+   bottom:0px;
+   height:60px;
+   width:100%;
+   background:#999;
 }
+
 
 .artist-statement{
 	margin-top:100px;
