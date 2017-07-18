@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Contact - Artsy Angler</title>
@@ -23,9 +23,9 @@
     <![endif]-->
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"> -->
 	<!-- Navigation -->
-	{% include "navigation-partial.html" %}
+	 {% include "navigation-partial.html" %} 
 
 
 	<header>
@@ -38,58 +38,80 @@
 	<section id="contact">
 		<div class="container">
 			<div class="row contact-form-row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <!--<p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>-->
-                <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
-                <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
-                <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-                <center>
 
-                    <form method="POST" action="http://formspree.io/nordinberghuisj@gmail.com">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <br>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <br>
-                        <textarea name="message" placeholder="Your Message" required></textarea>
-                        <br>
-                        <button type="submit">Send</button>
-                    </form>
-                </center>
-            </div>
-        </div>
-    </div>
+				<!--Column with picture  -->
+				 <div class="col-xs-6">
+					<img src="../../media/images/about2.jpg" alt="" style="max-width:200px">
+				</div>
+
+				<!-- <!--  Column with form   -->
+				 <div class="col-xs-6">
+						<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+							<!--<p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>-->
+							<!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+							<!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+							<!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+							<center>
+
+								<form method="POST" action="http://formspree.io/nordinberghuisj@gmail.com">
+									<input type="text" name="name" placeholder="Your Name" required>
+									<br>
+									<input type="email" name="email" placeholder="Your Email" required>
+									<br>
+									<textarea name="message" placeholder="Your Message" required></textarea>
+									<br>
+									<center>
+										<button type="submit" class="action-button shadow animate green">Send</button>
+									</center>
+								</form>
+							</center>
+						</div>
+						<!--experiment  -->
+				</div> 
+				<!--experiement  -->
+
 			</div>
-
 		</div>
 	</section>
 
 	<style>
-		input{
-			height: 40px;
-			width: 174px;
-			/* border: 5px groove grey; */
+		header {
+			font-size: 50px !important;
+			line-height: 50px !important;
+			margin-bottom: 5% !important;
+			font-weight: 600 !important;
+			letter-spacing: -2px !important;
+			font-family: 'Pacifico', cursive;
 		}
-		textarea{
-			height: 80px;
-			width:174px;
 
-			/* border: 5px groove grey; */
+		input,
+		textarea {
+			width: 174px;
+			padding: 12px 20px;
+			border: 1px solid rgba(0, 0, 0, .1) !important;
+			font-size: 14px !important;
+			line-height: normal;
+			border-radius: 4px !important;
+			width: 100%;
+			margin: 0 0 20px 0;
+			max-width: 100%;
+			resize: none;
 		}
 	</style>
 
 	<!-- Footer -->
 	{% include "footer-partial.html" %}
 
-	<!-- jQuery -->
+	 <!-- jQuery 
 	<script src="js/jquery.js"></script>
 	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
 	<!-- Plugin JavaScript -->
-	<script src="js/jquery.easing.min.js"></script>
+	<!-- <script src="js/jquery.easing.min.js"></script> -->
 	<!-- Contact JavaScript -->
-	<script src="js/validate.js"></script>
+	<!-- <script src="js/validate.js"></script> -->
 	<!-- Custom Theme JavaScript -->
-	<script src="js/theme.js"></script>
-</body>
+	<!-- <script src="js/theme.js"></script> --> 
+	<!-- </body> -->
 
 </html>
