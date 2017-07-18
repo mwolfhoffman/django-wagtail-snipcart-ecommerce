@@ -1,5 +1,7 @@
 .thumbnail{
     max-width: 200px;
+    max-height: 115px;
+    margin: auto;
 }
 
 .row.is-flex {
@@ -12,6 +14,16 @@
 }
 
 .img-container{
-    height: 200px;
+    height: 130px;
      margin: 0 auto;
+}
+
+button{
+  height:45px;
+}
+
+@media only screen and (max-width: 780px) {
+  body{
+    padding-bottom: 700px;
+  }
 }

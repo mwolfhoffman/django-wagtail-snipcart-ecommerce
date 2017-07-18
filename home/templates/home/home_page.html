@@ -15,10 +15,10 @@
 
     <div class="products">
       <div class="container">
-        <div class="row is-flex">
+        <div class="row is-flex text-center">
               {% for product in self.get_children.specific %}
           <div class="col-md-3">
-            <div class="box">
+            <div class="well box">
                 {% include "product_partial.html" %}
             </div>
           </div>

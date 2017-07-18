@@ -5,22 +5,30 @@
       <img src="{{ product.image }}" alt="{{ product.name }}" class="thumbnail"/>
       </div>
 
-      <a href="{{ product.slug }}">
         <div class="product-description">
-          <p>{{ product.name }}</p>
+          <h3>{{ product.name }}</h3>
           <!-- <p>{{ product.description }}</p> -->
 
-      </a>
 
-            <button class="snipcart-add-item"
+      <div class="col-xs-6">
+            <button class="btn-success snipcart-add-item"
             data-item-name="{{ product.name }}"
             data-item-id="{{ product.sku }}"
             data-item-image="media/{{ product.image }}"
             data-item-url="{{ product.productAt }}"
             data-item-price="{{ product.price }}"
             data-item-description="{{ product.description }}">
-            Buy it for {{ product.price }} $
+          Buy Now:  $ {{ product.price }}
           </button>
+      </div>
+
+      <div class="col-xs-6">
+        <a href="{{ product.slug }}">
+            <button class="btn-primary">More Info</button>
+        </a>
+      </div>
+
+
         </div>
   </div>
 </div> 
