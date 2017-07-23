@@ -7,6 +7,14 @@ html, body {
 	padding-bottom: 60px;
 }
 
+h1,h2, nav{
+	font-family: 'Merriweather', serif;
+}
+
+h3,p{
+font-family: 'Lato', sans-serif;	
+}
+
 nav{
 	max-height: 52px;
 }
